@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!--
+    /**
+     * @project     Data Value | Sales Handover Template
+     * @description Professional Pre-Demo Intelligence Brief with Arabic/English Support.
+     * @version     3.0.0
+     * @author      Data Value Engineering Team
+     * @copyright   2026 Data Value. All rights reserved.
+     */
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Value | Sales Handover Template</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="dv-template-wrapper">
+    <!-- Language Switcher -->
+    <div class="dv-lang-switcher">
+        <button class="dv-lang-btn" onclick="TranslationEngine.toggleLanguage()">
+            <span id="lang-label">العربية</span>
+            <span>🌐</span>
+        </button>
+    </div>
+
+    <!-- Header: Brand Identity -->
+    <header class="dv-header">
+        <div class="dv-logo-area">
+            <img src="assets/images/logo.png" alt="Data Value Logo">
+        </div>
+        <div class="dv-header-text">
+            <h1 class="dv-title" id="ui-title">Sales Handover Template</h1>
+            <p class="dv-subtitle" id="ui-subtitle">ERPNext Intelligence Brief</p>
+        </div>
+    </header>
+
+    <!-- Progress Tracker -->
+    <div class="dv-progress-card">
+        <div class="dv-progress-label">
+            <span id="ui-progress-label">Mandatory Data Completion</span>
+            <span id="pct-text">0%</span>
+        </div>
+        <div class="dv-progress-bar-bg">
+            <div class="dv-progress-bar-fill" id="pct-bar"></div>
+        </div>
+    </div>
+
+    <!-- Dynamic Form Content -->
+    <div id="form-container"></div>
+
+    <!-- Footer Actions -->
+    <footer class="dv-footer">
+        <div class="dv-footer-warning">
+            <span>⚠️</span>
+            <span id="ui-footer-warn">No demo scheduled without mandatory fields.</span>
+        </div>
+        <button class="dv-btn-primary" onclick="CoreEngine.generateSummary()" id="ui-btn-export">
+            Generate Summary Report ↗
+        </button>
+    </footer>
+</div>
+
+<!-- Modal: Report Summary -->
+<div id="reportModal" class="dv-modal">
+    <div class="dv-modal-content">
+        <h2 id="ui-modal-title" style="margin-bottom: 10px; color: var(--dv-blue-primary);">Handover Summary</h2>
+        <p id="ui-modal-sub" style="font-size: 13px; color: var(--dv-gray-text);">Copy this report for internal pre-sales communication.</p>
+        <div id="summary-output" class="dv-summary-box"></div>
+        <button class="dv-copy-btn" onclick="CoreEngine.copyToClipboard()" id="ui-btn-copy">Copy to Clipboard 📋</button>
+        <p style="text-align:center; margin-top:15px; cursor:pointer; font-size:13px; color:var(--dv-gray-text);" onclick="UIController.closeModal()" id="ui-modal-close">Close</p>
+    </div>
+</div>
+
+<!-- Core JavaScript -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
