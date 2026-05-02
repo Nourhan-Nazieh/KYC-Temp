@@ -1,13 +1,12 @@
 /* 
- * DATA VALUE | CORE STYLESHEET
  * Global styles, layout, and component design.
  */
 
 :root {
     /* Brand Palette */
-    --dv-blue-primary: #007BFF;
-    --dv-blue-secondary: #0056b3;
-    --dv-blue-light: #E6F2FF;
+    --dv-blue-primary: #00BFA5;
+    --dv-blue-secondary: #007B8A;
+    --dv-blue-light: #E0F7F4;
     --dv-black: #1A1A1A;
     --dv-gray-text: #4D4D4D;
     --dv-gray-border: #E0E0E0;
@@ -99,7 +98,7 @@ body {
     background: var(--dv-blue-light);
     padding: 20px;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(0, 123, 255, 0.1);
+    border: 1px solid rgba(0, 191, 165, 0.15);
 }
 .dv-progress-label { 
     font-size: 14px; font-weight: 600; color: var(--dv-blue-secondary); 
@@ -157,7 +156,7 @@ body {
     border-radius: 8px; outline: none; transition: all 0.2s;
     font-family: inherit;
 }
-.dv-input:focus { border-color: var(--dv-blue-primary); box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.08); }
+.dv-input:focus { border-color: var(--dv-blue-primary); box-shadow: 0 0 0 4px rgba(0, 191, 165, 0.1); }
 
 .dv-pill-group { display: flex; gap: 10px; flex-wrap: wrap; }
 .dv-pill {
@@ -193,7 +192,7 @@ body {
 .dv-btn-primary {
     background: var(--dv-blue-primary); color: #fff; border: none; padding: 12px 28px;
     border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 191, 165, 0.25);
 }
 .dv-btn-primary:hover { background: var(--dv-blue-secondary); transform: translateY(-2px); }
 
