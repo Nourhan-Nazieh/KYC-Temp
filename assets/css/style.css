@@ -1,13 +1,16 @@
 /* 
+<<<<<<< HEAD
  * DATA VALUE | CORE STYLESHEET (OPTIMIZED & RESPONSIVE)
+=======
+>>>>>>> 54fae5013cf81729ee88b514cf65bb499087c82d
  * Global styles, layout, and component design.
  */
 
 :root {
     /* Brand Palette */
-    --dv-blue-primary: #007BFF;
-    --dv-blue-secondary: #0056b3;
-    --dv-blue-light: #E6F2FF;
+    --dv-blue-primary: #00BFA5;
+    --dv-blue-secondary: #007B8A;
+    --dv-blue-light: #E0F7F4;
     --dv-black: #1A1A1A;
     --dv-gray-text: #4D4D4D;
     --dv-gray-border: #E0E0E0;
@@ -130,7 +133,7 @@ body {
     background: var(--dv-blue-light);
     padding: 20px;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(0, 123, 255, 0.1);
+    border: 1px solid rgba(0, 191, 165, 0.15);
 }
 .dv-progress-label { 
     font-size: 14px; 
@@ -246,10 +249,14 @@ body {
     transition: all 0.2s;
     font-family: inherit;
 }
+<<<<<<< HEAD
 .dv-input:focus { 
     border-color: var(--dv-blue-primary); 
     box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.08); 
 }
+=======
+.dv-input:focus { border-color: var(--dv-blue-primary); box-shadow: 0 0 0 4px rgba(0, 191, 165, 0.1); }
+>>>>>>> 54fae5013cf81729ee88b514cf65bb499087c82d
 
 .dv-pill-group { 
     display: flex; 
@@ -340,6 +347,7 @@ body {
 }
 
 .dv-btn-primary {
+<<<<<<< HEAD
     background: var(--dv-blue-primary); 
     color: #fff; 
     border: none; 
@@ -350,6 +358,11 @@ body {
     cursor: pointer; 
     transition: all 0.3s;
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+=======
+    background: var(--dv-blue-primary); color: #fff; border: none; padding: 12px 28px;
+    border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 191, 165, 0.25);
+>>>>>>> 54fae5013cf81729ee88b514cf65bb499087c82d
 }
 .dv-btn-primary:hover { 
     background: var(--dv-blue-secondary); 
@@ -414,6 +427,7 @@ body {
 .badge-opt { background: #F0F4F8; color: var(--dv-gray-text); }
 .badge-crit { background: #FFF5E6; color: var(--status-critical); }
 
+<<<<<<< HEAD
 /* --- RESPONSIVE DESIGN --- */
 
 /* Tablets and Small Desktops */
@@ -516,3 +530,10 @@ body {
         font-size: 12px;
     }
 }
+=======
+@media (max-width: 600px) {
+    .dv-header { flex-direction: column; text-align: center; gap: 15px; }
+    .dv-footer { flex-direction: column; text-align: center; }
+    .dv-template-wrapper { padding: 1.5rem; }
+}
+>>>>>>> 54fae5013cf81729ee88b514cf65bb499087c82d

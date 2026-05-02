@@ -1,5 +1,4 @@
 /**
- * DATA VALUE | CORE JAVASCRIPT ENGINE
  * Handles multi-language support, form state, and UI interactions.
  */
 
@@ -7,7 +6,7 @@
 const Translations = {
     en: {
         title: "Sales Handover Template",
-        subtitle: "ERPNext Intelligence Brief",
+        subtitle: "CubesERP Intelligence Brief",
         progress: "Mandatory Data Completion",
         footerWarn: "No demo scheduled without mandatory fields.",
         btnExport: "Generate Summary Report ↗",
@@ -52,7 +51,7 @@ const Translations = {
     },
     ar: {
         title: "تمبلت تسليم المبيعات",
-        subtitle: "موجز معلومات ما قبل الديمو - ERPNext",
+        subtitle: "موجز معلومات ما قبل الديمو - CubesERP",
         progress: "نسبة اكتمال البيانات الإجبارية",
         footerWarn: "لن يتم جدولة ديمو بدون استكمال الحقول الإجبارية.",
         btnExport: "تصدير تقرير الملخص ↗",
